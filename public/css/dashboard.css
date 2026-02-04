@@ -1,0 +1,60 @@
+/* Layout */
+.dashboard {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #0a2a43;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.sidebar li:hover {
+    background: #133f63;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 30px;
+    background: #f4f6f9;
+}
+
+/* Users table */
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.users-table th,
+.users-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.users-table th {
+    background: #133f63;
+    color: white;
+    text-align: left;
+}

@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dbdbdb;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login box */
+.login-box {
+    width: 410px;
+    background: whitesmoke;
+    padding: 50px 30px 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box:hover {
+    box-shadow: 4px 4px #002366;
+    transform: scale(1.02);
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #002366;
+}
+
+.login-box h3 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.login-span {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.login-span:hover {
+    text-decoration: underline;
+}
+
+/* Input group */
+.input-group {
+    position: relative;  /* parent for absolute icons */
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+/* Left icon */
+.input-group .icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00008B;
+    width: 18px;
+    height: 18px;
+}
+
+/* Username input (text) */
+.input-group input[type="text"] {
+    width: 100%;              /* full width for username */
+    padding: 8px 4px 8px 30px; /* padding-left for left icon */
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+}
+
+/* Password input */
+.input-group input[type="password"] {
+    width: 100%;              /* full width minus eye icon handled by padding */
+    padding: 8px 35px 8px 30px; /* left padding for icon, right padding for eye */
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+}
+
+.input-group input:focus {
+    border-bottom-color: #385898;
+}
+
+/* Floating label */
+.input-group label {
+    position: absolute;
+    left: 30px;
+    top: 8px;
+    color: #777;
+    pointer-events: none;
+    font-size: 16px;
+    transition: 0.3s ease all;
+}
+
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -12px;
+    font-size: 12px;
+    color: #385898;
+}
+
+/* Password eye toggle */
+.input-group .toggle {
+    position: absolute;
+    right: 0;              /* flush to far right of input line */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eye-icon {
+    width: 20px;
+    height: 20px;
+    color: #777;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #002366;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    transition: 0.15s;
+}
+
+button:hover {
+    background-color: #007bff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Company logo */
+.company-logo {
+    width: 120px;              /* slightly smaller */
+    height: auto;
+    opacity: 0.85;
+    filter: blur(0.17px);
+    display: block;
+    margin: 15px auto 0 auto;  /* keeps it inside the form */
+}
+
+/*signup form */
+/* Signup box inherits login styles */
+.input-group input[type="email"] {
+    width: 100%;
+    padding: 8px 4px 8px 30px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+}
+
+
+.signup-box {
+    width: 410px;
+    background: whitesmoke;
+    padding: 50px 30px 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Optional hover (same behavior) */
+.signup-box:hover {
+    box-shadow: 4px 4px #002366;
+    transform: scale(1.02);
+}
+/* 🔹 Background color ONLY when input has text */
+.input-group input:not(:placeholder-shown) {
+    background-color: rgba(77, 163, 255, 0.08); /* light blue / green tint */
+}
+
+
