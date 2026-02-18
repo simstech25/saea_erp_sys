@@ -1,0 +1,8 @@
+this is the dev document i was telling you about, we will be using this doc as a feature map.
+
+Functionality Roadmap
+1. Auth Setup [ In progress ]
+2. Super Admin Route Creation [ Not Started ]
+3. Supervisor Route Setup [ In Progress ]
+
+These are the main things for now, i havent done must just project initialisations only.
