@@ -1,4 +1,4 @@
-export const useAuth = () => {
+export const useAuths = () => {
   const supabase = useSupabaseClient();
 
   // Sign in with email and password
